@@ -49,10 +49,10 @@ function handleSubmit(event) {
   entries.push(entry)
   document.querySelector('form').reset()
   addNewEntry(entry)
-  calcTotal()
-  calcAverage()
-  weeklyHigh()
-  calcGoal()
+  calcTotal();
+  calcAverage();
+  weeklyHigh();
+  calcGoal();
 }
 
 const form = document
