@@ -1,7 +1,16 @@
+let entries = [];
+
+function addNewEntry() {
+
+}
+
 function handleSubmit(event) {
   event.preventDefault();
   const entry = Number(document.querySelector('#entry').value);
-  console.log(entry);
+ if (!entry) return;
+ document.querySelector('form').reset();
+ entries.push(entry);
+ addNewEntry(entry);
 }
 
 const form = document
